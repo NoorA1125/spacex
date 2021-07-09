@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Component } from 'react';
 import BulmaNavbar from "./components/Navbar";
-// import BulmaCard from "./components/Card";
+// import BulmaCard from "./components/Card";  ***Example of one other route I couldve done this by rather then having the Card HTML code here***
 // import BulmaModal from "./components/Modal";
 import Hero from "./components/Hero";
 import 'bulma/css/bulma.min.css';
@@ -22,7 +22,7 @@ class App extends Component {
       .then(rockets => this.setState({ rockets: rockets }))
   }
 
-  render() {
+  render() { //One time call
     return (
       <>
         <BulmaNavbar />
@@ -31,7 +31,7 @@ class App extends Component {
         {/* Code for Cards to be generated */}
         <section className="container">
           <div className="columns features">
-            {this.state.rockets.map((rocket) => (
+            {this.state.rockets.map((rocket) => ( 
               <div className="column" key={rocket.id}>
                 <div className="card is-shady">
                   <div className="card-image">
@@ -52,7 +52,7 @@ class App extends Component {
           </div>
         </section>
 
-        {/* Code for Modal to pop up */}
+        {/* Code for Modal to pop up - Decided not to add a modal as it's not necessary with the requirements*/}
 
       </>
     );

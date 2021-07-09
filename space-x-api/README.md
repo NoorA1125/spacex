@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Hello, my name is Noor Abdikadir. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was my approach for the challenge. 
 
-## Available Scripts
+Key things I kept in mind during this challenge was one of the troubles the company was facing/working on: 
 
-In the project directory, you can run:
+Which were: 
+Security, 
+Re-useablity, 
+Best Practices.
 
-### `npm start`
+There really wasn't a whole lot for me to do anything security wise, 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+if I needed a API KEY for this project, perhaps that would've been one case study I could've showed off but that wasn't the case.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Therefore, I impleneted React componenets as well as react file structure (though not the best example here).
 
-### `npm test`
+React componenets allows you to break the entire front-end into chunks, so it's easy to read, debug, and implemented using custom hooks throughout the page, rather then rewritting the same code elsewhere. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Some examples of Best practices: 
 
-### `npm run build`
+useState - basically listens to a components state and when it detects a chance, implements it where ever else that chance is called on. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I implemented this with the API fetch. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I created 1 card, and used the API data to auto fill in the data and using a react KEY to duplucate a card is needed, which is how I managed to created 4 rockets (all that was available in the API) with 1 card code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In terms of reworld examples: My approach in full effect would've been layed out like this: 
 
-### `npm run eject`
+Turning a traditional code like this one down Below:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!DOCTYPE html>
+<html>
+<head>
+<links>
+<links>
+<links>
+<links>
+</head>
+<body>
+<header>
+<navbar>
+    <ul> 
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</navbar>
+</header>
+<section>
+    <article>
+</section>
+<section>
+    <article>
+</section>
+<section>
+    <article>
+</section>
+</body>
+</html>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Into a easily disgestible, reuseable, secure with best practices React app like this: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+return (
+        <Navbar /> Where each of these is its own seperate file.
+        <Hero />
+        <FirstPage /> Easier to Read,
+        <SecondPage /> Easier to Debug,
+        <ContactPage /> Overall, very secure as when it comes to security when all sensitive data isnt in one single file. But thats for another time. Thanks for taking the time.
+)
