@@ -35,17 +35,18 @@ function App() {
     <br />
     {/* Code for Cards to be generated */}
     <div className="columns features"> 
-            <div className="column is-4" key={rocket.id}>
+            <div className="column is-4">
                 <div className="card is-shady">
                     <div className="card-image">
                         <figure className="image is-4by3">
-                            <img src={rocket.flickr_images[0]} alt={rocket.name} />
+                            <img src="{rocket.flickr_images[0]}" alt="{rocket.name}" />
                         </figure>
                     </div>
                     <div className="card-content">
                         <div className="content">
-                            <h4>{rocket.name}</h4>
-                            <p>{rocket.description}</p>
+                            <h4>Tempor orci dapibus faber in.</h4>
+                            <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                sed risus.</p>
                             <span className="button is-link modal-button" data-target="modal-card">Modal Card</span>
                         </div>
                     </div>
