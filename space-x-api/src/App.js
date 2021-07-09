@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Component } from 'react';
 import BulmaNavbar from "./components/Navbar";
-import BulmaCard from "./components/Card";
-import BulmaModal from "./components/Modal";
+// import BulmaCard from "./components/Card";
+// import BulmaModal from "./components/Modal";
 import Hero from "./components/Hero";
 import 'bulma/css/bulma.min.css';
 import './styles.css';
