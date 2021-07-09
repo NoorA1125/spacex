@@ -39,7 +39,7 @@ function App() {
                 <div className="card is-shady">
                     <div className="card-image">
                         <figure className="image is-4by3">
-                            <img src="{rocket.flickr_images[0]}" alt="{rocket.name}" />
+                            <img src={rocket.flickr_images[0]} alt={rocket.name} />
                         </figure>
                     </div>
                     <div className="card-content">
