@@ -1,2 +1,7 @@
 .columns:nth-child(2) 
-    {margin-top: -10rem; margin-right: -20px;}
+    {margin-top: -10rem;
+}
+
+.color-white {
+    color: #fff;
+}

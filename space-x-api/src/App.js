@@ -29,26 +29,29 @@ class App extends Component {
         <Hero />
         <br />
         {/* Code for Cards to be generated */}
-        {this.state.rockets.map((rocket) => (
-        <div className="columns features">
-          <div className="column is-4">
-            <div className="card is-shady">
-              <div className="card-image">
-                <figure className="image is-4by3">
-                  <img src="" alt="Space X API Rockets" />
-                </figure>
-              </div>
-              <div className="card-content">
-                <div className="content">
-                  <h4>{rocket.name}</h4>
-                  <p>{rocket.description}</p>
-                  <span className="button is-link modal-button" data-target="modal-card"><a href={rocket.wikipedia} target="_blank">Learn More</a></span>
+        <section className="container">
+          <div className="columns features">
+            {this.state.rockets.map((rocket) => (
+              <div className="column" key={rocket.id}>
+                <div className="card is-shady">
+                  <div className="card-image">
+                    <figure className="image is-4by3">
+                      <img src={rocket.flickr_images[0]} alt="Space X API Rockets" />
+                    </figure>
+                  </div>
+                  <div className="card-content">
+                    <div className="content">
+                      <h4>{rocket.name}</h4>
+                      <p>{rocket.description}</p>
+                      <span className="button is-link modal-button" data-target="modal-card"><a className="color-white" href={rocket.wikipedia} target="_blank">Learn More</a></span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        </div>
-        ))}
+        </section>
+
         {/* Code for Modal to pop up */}
 
       </>
