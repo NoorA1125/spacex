@@ -25,6 +25,10 @@ I implemented this with the API fetch.
 
 I created 1 card, and used the API data to auto fill in the data and using a react KEY to duplucate a card is needed, which is how I managed to created 4 rockets (all that was available in the API) with 1 card code.
 
+What I used to pull this project off: 
+Bulma - A CSS Framework
+SpaceX API 
+
 In terms of reworld examples: My approach in full effect would've been layed out like this: 
 
 Turning a traditional code like this one down Below:
